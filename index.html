@@ -1,0 +1,798 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PJ Laundry – Cuci Bersih, Tanpa Drama</title>
+    <meta
+      name="description"
+      content="PJ Laundry – Layanan laundry premium dengan harga transparan. Kiloan, satuan, karpet, dan sepatu. Antar-jemput tersedia. Order via WhatsApp!"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar" id="navbar">
+        <a href="#" class="navbar__logo">PJ LAUNDRY</a>
+
+        <button class="navbar__toggle" id="navToggle" aria-label="Buka menu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="navbar__links" id="navLinks">
+          <li><a href="#layanan">Layanan</a></li>
+          <li><a href="#aturan">Aturan Cuci</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+
+        <a href="#" class="navbar__cta"> Order via WhatsApp </a>
+      </nav>
+    </header>
+
+    <section class="hero" id="hero" aria-label="Beranda">
+      <div class="hero__bg" role="img" aria-label="Background laundry"></div>
+      <div class="hero__overlay"></div>
+
+      <div class="hero__content">
+        <!-- LEFT -->
+        <div class="hero__left">
+          <div class="hero__eyebrow">
+            <span>✨</span> Laundry Premium &nbsp;·&nbsp; Harga Jujur
+          </div>
+
+          <h1 class="hero__headline">
+            Cuci Bersih,<br />
+            <em>Tanpa Drama.</em>
+          </h1>
+
+          <p class="hero__sub">
+            Serahkan cucian Anda ke tangan yang tepat. Kami proses dengan
+            deterjen eco-friendly, mesin modern, dan standar higienis yang ketat
+            — siap sesuai jadwal.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#" class="btn-wa"> Order Sekarang </a>
+            <a href="#layanan" class="btn-ghost">Lihat Harga ↓</a>
+          </div>
+        </div>
+
+        <!-- RIGHT CARD -->
+        <div class="hero__card">
+          <div class="hero__card-tags">
+            <span class="tag tag--yellow">Premium</span>
+            <span class="tag tag--blue">Express</span>
+            <span class="tag tag--peach">Antar-Jemput</span>
+          </div>
+          <p class="hero__card-title">Perawatan Khusus &amp; Profesional</p>
+          <img
+            class="hero__card-img"
+            src="assets/hero-2.png"
+            alt="Proses laundry profesional"
+            loading="eager"
+            fetchpriority="high"
+          />
+          <div class="hero__card-stats">
+            <div class="hero__card-stat">
+              <strong>5K+</strong><span>Pelanggan</span>
+            </div>
+            <div class="hero__card-stat">
+              <strong>6 Thn</strong><span>Pengalaman</span>
+            </div>
+            <div class="hero__card-stat">
+              <strong>99%</strong><span>Kepuasan</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KATALOG LAYANAN & ESTIMASI HARGA -->
+    <section class="services" id="layanan">
+      <div class="container">
+        <span class="section-label reveal">Katalog Layanan</span>
+        <h2 class="section-title reveal">Pilih Layanan Anda</h2>
+        <p class="section-sub reveal">
+          Harga transparan, tanpa biaya tersembunyi. Estimasi waktu dihitung
+          dari barang diterima.
+        </p>
+
+        <!-- Tabs -->
+        <div class="services-tabs" role="tablist">
+          <button
+            class="tab-btn active"
+            data-tab="kiloan"
+            role="tab"
+            aria-selected="true"
+            id="tab-kiloan"
+          >
+            Kiloan
+          </button>
+          <button
+            class="tab-btn"
+            data-tab="satuan"
+            role="tab"
+            aria-selected="false"
+            id="tab-satuan"
+          >
+            Satuan
+          </button>
+          <button
+            class="tab-btn"
+            data-tab="karpet"
+            role="tab"
+            aria-selected="false"
+            id="tab-karpet"
+          >
+            Karpet &amp; Sepatu
+          </button>
+        </div>
+
+        <!-- Panel: Kiloan -->
+        <div
+          class="services-panel active"
+          id="panel-kiloan"
+          role="tabpanel"
+          aria-labelledby="tab-kiloan"
+        >
+          <div class="service-card service-card--yellow reveal">
+            <span class="service-card__icon">🧺</span>
+            <p class="service-card__name">Cuci Reguler</p>
+            <p class="service-card__desc">
+              Cuci + keringkan + lipat. Deterjen standar berkualitas. Cocok
+              untuk pakaian sehari-hari dalam jumlah besar.
+            </p>
+            <div class="service-card__meta">
+              <span class="service-card__price">Rp 6.000/kg</span>
+              <span class="service-card__time">⏱ 1–2 hari</span>
+            </div>
+          </div>
+          <div class="service-card service-card--blue reveal reveal-delay-1">
+            <span class="service-card__icon">⚡</span>
+            <p class="service-card__name">Cuci Express</p>
+            <p class="service-card__desc">
+              Selesai dalam 3–5 jam! Prioritas antrean, diproses lebih dahulu.
+              Minimal 3 kg.
+            </p>
+            <div class="service-card__meta">
+              <span class="service-card__price">Rp 12.000/kg</span>
+              <span class="service-card__time">⏱ 3–5 jam</span>
+            </div>
+          </div>
+          <div class="service-card service-card--peach reveal reveal-delay-2">
+            <span class="service-card__icon">✨</span>
+            <p class="service-card__name">Cuci Premium</p>
+            <p class="service-card__desc">
+              Deterjen premium pilihan, pewangi eksklusif, dikemas rapi. Untuk
+              pakaian istimewa Anda.
+            </p>
+            <div class="service-card__meta">
+              <span class="service-card__price">Rp 10.000/kg</span>
+              <span class="service-card__time">⏱ 1–2 hari</span>
+            </div>
+          </div>
+          <div class="service-card service-card--teal reveal reveal-delay-3">
+            <span class="service-card__icon">🚗</span>
+            <p class="service-card__name">Antar-Jemput</p>
+            <p class="service-card__desc">
+              Layanan jemput dari rumah Anda, antar kembali setelah selesai.
+              Gratis untuk area tertentu (min. 5 kg).
+            </p>
+            <div class="service-card__meta">
+              <span class="service-card__price">+Rp 5.000 ongkir</span>
+              <span class="service-card__time">⏱ Sesuai layanan</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel: Satuan -->
+        <div
+          class="services-panel"
+          id="panel-satuan"
+          role="tabpanel"
+          aria-labelledby="tab-satuan"
+        >
+          <div class="service-card service-card--yellow reveal">
+            <span class="service-card__icon">👔</span>
+            <p class="service-card__name">Kemeja / Kaos</p>
+            <p class="service-card__desc">
+              Dicuci, dikeringkan, dan disetrika rapi. Cocok untuk seragam
+              kantor atau pakaian formal.
+            </p>
+            <div class="service-card__meta">
+              <span class="service-card__price">Rp 5.000/pcs</span>
+              <span class="service-card__time">⏱ 1 hari</span>
+            </div>
+          </div>
+          <div class="service-card service-card--blue reveal reveal-delay-1">
+            <span class="service-card__icon">👗</span>
+            <p class="service-card__name">Dress / Gaun</p>
+            <p class="service-card__desc">
+              Penanganan ekstra hati-hati. Proses manual untuk bahan halus.
+              Pengeringan gantung.
+            </p>
+            <div class="service-card__meta">
+              <span class="service-card__price">Rp 15.000/pcs</span>
+              <span class="service-card__time">⏱ 1–2 hari</span>
+            </div>
+          </div>
+          <div class="service-card service-card--peach reveal reveal-delay-2">
+            <span class="service-card__icon">🧥</span>
+            <p class="service-card__name">Jas / Blazer</p>
+            <p class="service-card__desc">
+              Dry cleaning atau cuci manual. Disetrika dengan uap untuk bentuk
+              sempurna. Dikemas dengan hanger.
+            </p>
+            <div class="service-card__meta">
+              <span class="service-card__price">Rp 30.000/pcs</span>
+              <span class="service-card__time">⏱ 2–3 hari</span>
+            </div>
+          </div>
+          <div class="service-card service-card--teal reveal reveal-delay-3">
+            <span class="service-card__icon">🛏️</span>
+            <p class="service-card__name">Sprei / Selimut</p>
+            <p class="service-card__desc">
+              Mesin berkapasitas besar, deterjen antibakteri. Hasil bersih,
+              segar, dan higienis.
+            </p>
+            <div class="service-card__meta">
+              <span class="service-card__price">Rp 20.000/pcs</span>
+              <span class="service-card__time">⏱ 1–2 hari</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel: Karpet & Sepatu -->
+        <div
+          class="services-panel"
+          id="panel-karpet"
+          role="tabpanel"
+          aria-labelledby="tab-karpet"
+        >
+          <div class="service-card service-card--yellow reveal">
+            <span class="service-card__icon">🟫</span>
+            <p class="service-card__name">Karpet Kecil (s.d. 1m²)</p>
+            <p class="service-card__desc">
+              Dikerjakan manual, sikat bulu khusus, pengeringan sempurna. Cocok
+              untuk karpet kamar atau dapur.
+            </p>
+            <div class="service-card__meta">
+              <span class="service-card__price">Rp 20.000/pcs</span>
+              <span class="service-card__time">⏱ 2–3 hari</span>
+            </div>
+          </div>
+          <div class="service-card service-card--blue reveal reveal-delay-1">
+            <span class="service-card__icon">🟫</span>
+            <p class="service-card__name">Karpet Besar (&gt;1m²)</p>
+            <p class="service-card__desc">
+              Proses mesin ekstra besar. Kami kerjakan dengan teliti per bagian
+              agar bersih merata.
+            </p>
+            <div class="service-card__meta">
+              <span class="service-card__price">Rp 15.000/m²</span>
+              <span class="service-card__time">⏱ 3–5 hari</span>
+            </div>
+          </div>
+          <div class="service-card service-card--peach reveal reveal-delay-2">
+            <span class="service-card__icon">👟</span>
+            <p class="service-card__name">Sepatu Biasa</p>
+            <p class="service-card__desc">
+              Cuci manual + sikat + pengeringan angin. Untuk sneaker, sepatu
+              kanvas, dan sepatu olahraga.
+            </p>
+            <div class="service-card__meta">
+              <span class="service-card__price">Rp 20.000/pasang</span>
+              <span class="service-card__time">⏱ 1–2 hari</span>
+            </div>
+          </div>
+          <div class="service-card service-card--teal reveal reveal-delay-3">
+            <span class="service-card__icon">👠</span>
+            <p class="service-card__name">Sepatu Kulit / Premium</p>
+            <p class="service-card__desc">
+              Pembersihan khusus bahan kulit dengan cairan terpilih. Finishing
+              conditioning untuk menjaga kilap.
+            </p>
+            <div class="service-card__meta">
+              <span class="service-card__price">Rp 40.000/pasang</span>
+              <span class="service-card__time">⏱ 2–3 hari</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAPAN EDUKASI & ATURAN CUCI -->
+    <section class="disclaimer" id="aturan">
+      <div class="container">
+        <span class="section-label reveal">Panduan &amp; Aturan Cuci</span>
+        <h2 class="section-title reveal">Kebijakan Penanganan Pakaian</h2>
+        <p class="section-sub reveal">
+          Transparansi standar penanganan demi menjaga kualitas, kebersihan, dan
+          keawetan pakaian Anda secara maksimal.
+        </p>
+
+        <div class="flag-grid">
+          <!-- GREEN: AMAN & STANDAR -->
+          <div class="flag-card flag-card--green reveal">
+            <div class="flag-card__header">
+              <span class="flag-card__emoji">🟢</span>
+              <span class="flag-card__badge">Aman &amp; Standar</span>
+            </div>
+            <h3 class="flag-card__title">
+              Pakaian Kasual &amp; Tekstil Harian
+            </h3>
+            <p class="flag-card__desc">
+              Bahan umum tanpa risiko luntur atau penyusutan. Langsung diproses
+              menggunakan formula deterjen ramah serat dengan pengaturan suhu
+              optimal.
+            </p>
+            <div class="rule-chips">
+              <span class="rule-chip">Katun &amp; Denim</span>
+              <span class="rule-chip">Kaos &amp; Kemeja</span>
+              <span class="rule-chip">Sprei &amp; Bedding</span>
+              <span class="rule-chip">Handuk &amp; Pakaian Rumah</span>
+              <span class="rule-chip">Tekstil Sintetis Biasa</span>
+            </div>
+            <div class="flag-card__action">
+              <span class="action-icon">✓</span>
+              <div class="action-text">
+                <strong>Standar Penanganan:</strong> Langsung dicuci mesin
+                higienis, pengeringan kontrol suhu, dan finishing setrika uap
+                rapi.
+              </div>
+            </div>
+          </div>
+
+          <!-- YELLOW: PERHATIAN KHUSUS -->
+          <div class="flag-card flag-card--amber reveal reveal-delay-1">
+            <div class="flag-card__header">
+              <span class="flag-card__emoji">🟡</span>
+              <span class="flag-card__badge">Perhatian Khusus</span>
+            </div>
+            <h3 class="flag-card__title">
+              Bahan Sensitif &amp; Ornamen Khusus
+            </h3>
+            <p class="flag-card__desc">
+              Pakaian dengan material rapuh, warna pekat rawan luntur, sablon
+              tebal, atau ornamen dekoratif yang memerlukan konfirmasi dan
+              penanganan ekstra.
+            </p>
+            <div class="rule-chips">
+              <span class="rule-chip">Sutra, Brokat &amp; Sifon</span>
+              <span class="rule-chip">Rajut Halus &amp; Wol</span>
+              <span class="rule-chip">Sablon Karet / DTF Tebal</span>
+              <span class="rule-chip">Payet &amp; Manik-manik</span>
+              <span class="rule-chip">Label Dry Clean Only</span>
+            </div>
+            <div class="flag-card__action">
+              <span class="action-icon">⚠️</span>
+              <div class="action-text">
+                <strong>Standar Penanganan:</strong> Wajib konfirmasi saat
+                penyerahan untuk pencucian terpisah, kantong jaring pelindung,
+                atau opsi gentle wash satuan.
+              </div>
+            </div>
+          </div>
+
+          <!-- RED: DI LUAR LAYANAN -->
+          <div class="flag-card flag-card--red reveal reveal-delay-2">
+            <div class="flag-card__header">
+              <span class="flag-card__emoji">🔴</span>
+              <span class="flag-card__badge">Di Luar Layanan</span>
+            </div>
+            <h3 class="flag-card__title">
+              Kondisi Non-Higienis &amp; Berisiko
+            </h3>
+            <p class="flag-card__desc">
+              Pakaian dengan kontaminasi zat kimia berbahaya atau kondisi
+              ekstrem yang berisiko merusak mesin dan higienitas cucian
+              pelanggan lainnya.
+            </p>
+            <div class="rule-chips">
+              <span class="rule-chip">Noda Kimia, Oli &amp; Cat</span>
+              <span class="rule-chip">Jamur Berat Membusuk</span>
+              <span class="rule-chip">Noda Biologis Mengering</span>
+              <span class="rule-chip">Kerusakan Sobek Ekstrem</span>
+              <span class="rule-chip">Sepatu Sol Hancur Lepas</span>
+            </div>
+            <div class="flag-card__action">
+              <span class="action-icon">✕</span>
+              <div class="action-text">
+                <strong>Standar Penanganan:</strong> Ditolak atau dikembalikan
+                saat inspeksi serah terima demi menjaga higienitas bersama tanpa
+                biaya tambahan.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- QUICK UX GUIDELINES (NO LISTS) -->
+        <div class="disclaimer-tips reveal">
+          <div class="tip-card">
+            <div class="tip-card__icon">🔍</div>
+            <div class="tip-card__content">
+              <h4 class="tip-card__title">Periksa Isi Saku</h4>
+              <p class="tip-card__desc">
+                Pastikan uang, koin, kartu penting, perhiasan, dan tisu telah
+                dikeluarkan sebelum pakaian ditimbang.
+              </p>
+            </div>
+          </div>
+          <div class="tip-card">
+            <div class="tip-card__icon">💬</div>
+            <div class="tip-card__content">
+              <h4 class="tip-card__title">Informasikan Noda Spesifik</h4>
+              <p class="tip-card__desc">
+                Sampaikan ke tim kami bila terdapat noda spesifik (tinta, getah,
+                minyak) agar dapat diberikan perlakuan pre-spotting.
+              </p>
+            </div>
+          </div>
+          <div class="tip-card">
+            <div class="tip-card__icon">🛡️</div>
+            <div class="tip-card__content">
+              <h4 class="tip-card__title">Garansi Klaim 1x24 Jam</h4>
+              <p class="tip-card__desc">
+                Periksa hasil cucian saat diterima. Layanan komplain dan
+                perbaikan diproses dalam 1x24 jam dengan menunjukkan nota resmi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ALUR LAYANAN (How It Works) -->
+    <section class="how" id="alur">
+      <div class="container">
+        <span class="section-label reveal">Alur Layanan</span>
+        <h2 class="section-title reveal">Proses Mudah, Hasil Pasti</h2>
+        <p class="section-sub reveal">
+          Dari serah terima hingga pakaian kembali ke tangan Anda — semuanya
+          terlacak.
+        </p>
+
+        <div class="how__track">
+          <div class="step reveal">
+            <div class="step__circle" style="position: relative">
+              <span class="step__num">1</span>
+              🗂️
+            </div>
+            <div class="step__body">
+              <p class="step__title">Serah Terima &amp; Cek Barang</p>
+              <p class="step__desc">
+                Barang diterima, dihitung beratnya, dan diperiksa kondisinya
+                bersama pelanggan. Nota diterbitkan saat itu juga.
+              </p>
+            </div>
+          </div>
+          <div class="step reveal reveal-delay-1">
+            <div class="step__circle" style="position: relative">
+              <span class="step__num">2</span>
+              🧴
+            </div>
+            <div class="step__body">
+              <p class="step__title">Sortir &amp; Pra-Perawatan</p>
+              <p class="step__desc">
+                Pakaian disortir per warna dan bahan. Noda besar ditangani
+                dengan pre-treatment khusus sebelum masuk mesin.
+              </p>
+            </div>
+          </div>
+          <div class="step reveal reveal-delay-2">
+            <div class="step__circle" style="position: relative">
+              <span class="step__num">3</span>
+              🌀
+            </div>
+            <div class="step__body">
+              <p class="step__title">Proses Pencucian</p>
+              <p class="step__desc">
+                Masuk mesin dengan program yang tepat. Deterjen eco-friendly,
+                air bersih. Dimonitor oleh tim kami secara aktif.
+              </p>
+            </div>
+          </div>
+          <div class="step reveal reveal-delay-3">
+            <div class="step__circle" style="position: relative">
+              <span class="step__num">4</span>
+              🌬️
+            </div>
+            <div class="step__body">
+              <p class="step__title">Pengeringan &amp; Finishing</p>
+              <p class="step__desc">
+                Dikeringkan sempurna, dilipat atau digantung rapi, dan dikemas
+                sesuai layanan yang dipilih.
+              </p>
+            </div>
+          </div>
+          <div class="step reveal reveal-delay-4">
+            <div class="step__circle" style="position: relative">
+              <span class="step__num">5</span>
+              🔔
+            </div>
+            <div class="step__body">
+              <p class="step__title">Notifikasi &amp; Pengambilan</p>
+              <p class="step__desc">
+                Anda mendapat notifikasi WhatsApp saat cucian siap. Ambil
+                langsung atau kami antar ke lokasi Anda.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ (Accordion) -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <span class="section-label reveal">FAQ</span>
+        <h2 class="section-title reveal">Pertanyaan Umum</h2>
+        <p class="section-sub reveal">
+          Jawaban untuk pertanyaan yang sering kami terima. Belum terjawab?
+          Hubungi kami via WhatsApp.
+        </p>
+
+        <div class="faq__list reveal">
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              Berapa lama waktu pengerjaan laundry?
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              Waktu pengerjaan tergantung layanan yang dipilih:<br /><br />
+              • <strong>Reguler:</strong> 1–2 hari kerja<br />
+              • <strong>Express:</strong> 3–5 jam (minimal 3 kg, antrean
+              diprioritaskan)<br />
+              • <strong>Karpet/Sepatu:</strong> 2–3 hari kerja<br /><br />
+              Waktu dihitung sejak barang diterima dan di-note, bukan sejak
+              pemesanan.
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              Bagaimana kebijakan ganti rugi jika pakaian rusak atau hilang?
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              Kami bertanggung jawab penuh atas kerusakan yang disebabkan oleh
+              kelalaian proses kami. Kompensasi maksimal adalah
+              <strong>5× tarif cuci item tersebut</strong>.<br /><br />
+              Pengecualian: Kerusakan pada pakaian kategori Yellow Flag (luntur,
+              sablon rusak, manik lepas) yang sudah dikonfirmasi risikonya oleh
+              pelanggan sebelum proses, tidak termasuk dalam tanggungan.
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              Apakah tersedia layanan antar-jemput? Bagaimana caranya?
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              Ya! Layanan antar-jemput tersedia untuk area Kabupaten Bojonegoro
+              dalam radius 5 km dari toko kami.<br /><br />
+              • <strong>Jemput:</strong> Pesan via WhatsApp, kami jemput dalam
+              1–2 jam (sesuai jadwal)<br />
+              • <strong>Antar:</strong> Dilakukan otomatis saat cucian selesai
+              dan Anda konfirmasi<br />
+              • <strong>Ongkir:</strong> Rp 5.000/sekali jalan. Gratis untuk
+              pesanan ≥ 5 kg dalam radius 3 km.
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              Bolehkah saya memilih pewangi atau deterjen tertentu?
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              Boleh! Kami menyediakan beberapa pilihan pewangi (lavender, fresh
+              cotton, dan unscented untuk kulit sensitif). Informasikan
+              preferensi saat serah terima atau via catatan di WhatsApp. Tidak
+              ada biaya tambahan untuk pilihan pewangi standar.
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              Apakah PJ Laundry buka setiap hari? Jam berapa?
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              Kami buka setiap hari:<br /><br />
+              • <strong>Senin – Jumat:</strong> 08.00 – 20.00 WIB<br />
+              • <strong>Sabtu:</strong> 08.00 – 18.00 WIB<br />
+              • <strong>Minggu &amp; Hari Libur Nasional:</strong> 09.00 – 15.00
+              WIB<br /><br />
+              Pemesanan WhatsApp bisa dilakukan 24 jam, namun konfirmasi
+              dilayani pada jam operasional.
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              Bagaimana cara saya melacak status cucian saya?
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              Setiap cucian mendapat <strong>nomor nota unik</strong> yang
+              dikirim via WhatsApp saat barang diterima. Anda bisa menanyakan
+              status dengan menyebutkan nomor nota tersebut kapan saja via
+              WhatsApp kami.<br /><br />
+              Notifikasi otomatis juga dikirim ketika status berubah: diterima →
+              dalam proses → selesai → siap diambil.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER & KONTAK -->
+    <footer class="footer-main" id="kontak">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Brand -->
+          <div class="footer-brand">
+            <span class="footer-logo">PJ LAUNDRY</span>
+            <p class="footer-tagline">
+              Mitra terpercaya untuk cucian bersih, harum, dan rapi Anda sejak
+              2018. Kualitas profesional, harga yang manusiawi.
+            </p>
+            <div class="footer-socials">
+              <a href="#" class="social-link" aria-label="Instagram">📸</a>
+              <a href="#" class="social-link" aria-label="Facebook">📘</a>
+              <a
+                href="https://wa.me/6281234567890"
+                class="social-link"
+                aria-label="WhatsApp"
+                target="_blank"
+                rel="noopener noreferrer"
+                >💬</a
+              >
+              <a href="#" class="social-link" aria-label="TikTok">🎵</a>
+            </div>
+          </div>
+
+          <!-- Links -->
+          <div class="footer-col">
+            <h4>Navigasi</h4>
+            <a href="#layanan">Katalog Layanan</a>
+            <a href="#aturan">Aturan Cuci</a>
+            <a href="#alur">Alur Layanan</a>
+            <a href="#faq">FAQ</a>
+            <a
+              href="https://wa.me/6281234567890"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Order via WhatsApp</a
+            >
+          </div>
+
+          <!-- Hours -->
+          <div class="footer-col">
+            <h4>Jam Operasional</h4>
+            <ul class="footer-hours">
+              <li><span>Senin – Jumat</span><strong>08.00–20.00</strong></li>
+              <li><span>Sabtu</span><strong>08.00–18.00</strong></li>
+              <li><span>Minggu</span><strong>09.00–15.00</strong></li>
+            </ul>
+            <p
+              style="
+                margin-top: 16px;
+                font-size: 13px;
+                color: rgba(255, 255, 255, 0.5);
+              "
+            >
+              📞 +62 812-3456-7890<br />
+              📧 halo@pjlaundry.id
+            </p>
+          </div>
+
+          <!-- Map -->
+          <div class="footer-col">
+            <h4>Lokasi Outlet</h4>
+            <p>
+              Jl. Kelapa No. 141<br />Kel. Kabunan, Kabupaten Bojonegoro<br />1136
+            </p>
+            <div class="footer-map">
+              <!-- Google Maps embed placeholder - ganti src dengan embed URL lokasi nyata -->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521!2d106.8456!3d-6.2088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTInMzEuNiJTIDEwNsKwNTAnNDQuMiJF!5e0!3m2!1sen!2sid!4v1234567890"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Lokasi PJ Laundry"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="footer-bottom">
+          <p>&copy; 2024 PJ Laundry. Hak cipta dilindungi undang-undang.</p>
+          <p>Dibuat dengan ❤️ untuk pelanggan setia kami.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+      // ── Navbar toggle (mobile) ──
+      const navToggle = document.getElementById("navToggle");
+      const navLinks = document.getElementById("navLinks");
+      navToggle.addEventListener("click", () =>
+        navLinks.classList.toggle("open"),
+      );
+      navLinks
+        .querySelectorAll("a")
+        .forEach((a) =>
+          a.addEventListener("click", () => navLinks.classList.remove("open")),
+        );
+
+      // ── Navbar scroll shadow ──
+      const navbar = document.getElementById("navbar");
+      window.addEventListener(
+        "scroll",
+        () => {
+          navbar.classList.toggle("scrolled", window.scrollY > 20);
+        },
+        { passive: true },
+      );
+
+      // ── Service tabs ──
+      const tabBtns = document.querySelectorAll(".tab-btn");
+      const panels = document.querySelectorAll(".services-panel");
+      tabBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          tabBtns.forEach((b) => {
+            b.classList.remove("active");
+            b.setAttribute("aria-selected", "false");
+          });
+          panels.forEach((p) => p.classList.remove("active"));
+          btn.classList.add("active");
+          btn.setAttribute("aria-selected", "true");
+          const target = document.getElementById("panel-" + btn.dataset.tab);
+          if (target) target.classList.add("active");
+        });
+      });
+
+      // ── FAQ Accordion ──
+      document.querySelectorAll(".faq__question").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const item = btn.closest(".faq__item");
+          const isOpen = item.classList.contains("open");
+          // close all
+          document.querySelectorAll(".faq__item").forEach((i) => {
+            i.classList.remove("open");
+            i.querySelector(".faq__question").setAttribute(
+              "aria-expanded",
+              "false",
+            );
+          });
+          // open clicked (toggle)
+          if (!isOpen) {
+            item.classList.add("open");
+            btn.setAttribute("aria-expanded", "true");
+          }
+        });
+      });
+
+      // ── Scroll Reveal ──
+      const revealEls = document.querySelectorAll(".reveal");
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("visible");
+              io.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.1, rootMargin: "0px 0px -40px 0px" },
+      );
+      revealEls.forEach((el) => io.observe(el));
+    </script>
+  </body>
+</html>
