@@ -1,0 +1,112 @@
+{
+  "services": [
+    {
+      "category": "kiloan",
+      "name": "Cuci Reguler",
+      "icon": "🧺",
+      "description": "Cuci + keringkan + lipat. Deterjen standar berkualitas untuk pakaian sehari-hari.",
+      "price": "Rp 6.000/kg",
+      "duration": "⏱ 1–2 hari",
+      "theme": "yellow"
+    },
+    {
+      "category": "kiloan",
+      "name": "Cuci Express",
+      "icon": "⚡",
+      "description": "Selesai dalam 3–5 jam dengan prioritas antrean. Minimal 3 kg.",
+      "price": "Rp 12.000/kg",
+      "duration": "⏱ 3–5 jam",
+      "theme": "blue"
+    },
+    {
+      "category": "kiloan",
+      "name": "Cuci Premium",
+      "icon": "✨",
+      "description": "Deterjen premium, pewangi eksklusif, dan kemasan rapi untuk pakaian istimewa.",
+      "price": "Rp 10.000/kg",
+      "duration": "⏱ 1–2 hari",
+      "theme": "peach"
+    },
+    {
+      "category": "kiloan",
+      "name": "Antar-Jemput",
+      "icon": "🚗",
+      "description": "Jemput dari rumah dan antar kembali setelah selesai. Gratis untuk area tertentu.",
+      "price": "+Rp 5.000 ongkir",
+      "duration": "⏱ Sesuai layanan",
+      "theme": "teal"
+    },
+    {
+      "category": "satuan",
+      "name": "Kemeja / Kaos",
+      "icon": "👔",
+      "description": "Dicuci, dikeringkan, dan disetrika rapi untuk seragam kantor atau pakaian formal.",
+      "price": "Rp 5.000/pcs",
+      "duration": "⏱ 1 hari",
+      "theme": "yellow"
+    },
+    {
+      "category": "satuan",
+      "name": "Dress / Gaun",
+      "icon": "👗",
+      "description": "Penanganan ekstra hati-hati untuk bahan halus dengan pengeringan gantung.",
+      "price": "Rp 15.000/pcs",
+      "duration": "⏱ 1–2 hari",
+      "theme": "blue"
+    },
+    {
+      "category": "satuan",
+      "name": "Jas / Blazer",
+      "icon": "🧥",
+      "description": "Dry cleaning atau cuci manual, setrika uap, dan dikemas dengan hanger.",
+      "price": "Rp 30.000/pcs",
+      "duration": "⏱ 2–3 hari",
+      "theme": "peach"
+    },
+    {
+      "category": "satuan",
+      "name": "Sprei / Selimut",
+      "icon": "🛏️",
+      "description": "Mesin berkapasitas besar dengan deterjen antibakteri untuk hasil higienis.",
+      "price": "Rp 20.000/pcs",
+      "duration": "⏱ 1–2 hari",
+      "theme": "teal"
+    },
+    {
+      "category": "karpet",
+      "name": "Karpet Kecil (s.d. 1m²)",
+      "icon": "🟫",
+      "description": "Pengerjaan manual dengan sikat khusus dan pengeringan sempurna.",
+      "price": "Rp 20.000/pcs",
+      "duration": "⏱ 2–3 hari",
+      "theme": "yellow"
+    },
+    {
+      "category": "karpet",
+      "name": "Karpet Besar (>1m²)",
+      "icon": "🟫",
+      "description": "Proses mesin ekstra besar agar karpet bersih merata di setiap bagian.",
+      "price": "Rp 15.000/m²",
+      "duration": "⏱ 3–5 hari",
+      "theme": "blue"
+    },
+    {
+      "category": "karpet",
+      "name": "Sepatu Biasa",
+      "icon": "👟",
+      "description": "Cuci manual, sikat, dan pengeringan angin untuk sneaker dan sepatu olahraga.",
+      "price": "Rp 20.000/pasang",
+      "duration": "⏱ 1–2 hari",
+      "theme": "peach"
+    },
+    {
+      "category": "karpet",
+      "name": "Sepatu Kulit / Premium",
+      "icon": "👠",
+      "description": "Pembersihan khusus bahan kulit dengan conditioning untuk menjaga kilap.",
+      "price": "Rp 40.000/pasang",
+      "duration": "⏱ 2–3 hari",
+      "theme": "teal"
+    }
+  ]
+}

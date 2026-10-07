@@ -1,0 +1,17 @@
+{
+  "name": "pj-laundry-week-4",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./src/output.css",
+    "dev": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "express": "^5.2.1",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "@ljharb/tsconfig": "^0.3.2"
+  }
+}
